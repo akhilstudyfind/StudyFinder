@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display, Add, Update, and Delete Studies</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+<h1>StudyFinder</h1>
+
+<h2>Add Study</h2>
+
+<!-- Form to add a new study -->
+<form id="addStudyForm">
+    <label for="title">Title:</label>
+    <input type="text" id="title" name="title" required>
+
+    <label for="studyStatus">Study Status:</label>
+    <input type="text" id="studyStatus" name="studyStatus" required>
+
+    <label for="description">Description:</label>
+    <textarea id="description" name="description" required></textarea>
+
+    <button type="submit">Add Study</button>
+</form>
+
+<h2>Filter</h2>
+
+<!-- Filter studies -->
+<div class="filtersection">
+    <label for="filterTitle">Filter by Title:</label>
+    <input type="text" id="filterTitle" name="filterTitle">
+
+    <label for="filterStudyStatus">Filter by Study Status:</label>
+    <input type="text" id="filterStudyStatus" name="filterStudyStatus">
+
+    <label for="filterDescription">Filter by Description:</label>
+    <input type="text" id="filterDescription" name="filterDescription">
+
+    <button id="filterButton">Filter</button>
+</div>
+
+<h2>Studies</h2>
+
+<ul id="entityList">
+    <!-- Entities will be displayed here -->
+</ul>
+
+<script src="script.js"></script>
+
+</body>
+</html>
